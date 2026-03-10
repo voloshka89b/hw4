@@ -68,10 +68,19 @@ body{
 .offer {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    background: url("../template_img/business.png") 100% 100% no-repeat, url("../template_img/rectangle107.png") 83% 100% no-repeat, url(../img/Ellipse21.png) 100% 60%  no-repeat;
+    background-size: 831px 751px, auto, auto;
+    top: 20px;
+    right: 20px;
+}
+.offer .container{
+    display: flex;
 }
 .offer__holder{
     width: 648px;
     margin: 167px 0 195px;
+    background: url(../img/Ellipse20.png) 100% 100% no-repeat;
 }
 .offer__text{
     font-weight: 700;
@@ -92,7 +101,6 @@ body{
     font-weight: 400;
     font-size: 18px;
     display: flex;
-
 }
 .offer__title {
     font-size: 58px;
@@ -134,9 +142,40 @@ body{
     gap: 10px;
     border: 2px solid #19191C;
     display: flex;
+    position: absolute;
 }
+.offer__programs{
+   position: relative;
+    flex-grow: 1;
+}
+
 .offer__list {
     list-style: none;
+    position: relative;
+}
+.invision{
+    top: 200px;
+    right: 0;
+}
+.protopie{
+    top: 140px;
+    right: 210px;
+}
+.miro{
+    top: 220px;
+    right:500px;
+}
+.photoshop{
+    top: 400px;
+    right: 485px;
+}
+.figma{
+    top: 570px;
+    right: 715px;
+}
+.illustrator{
+   top: 740px;
+    right: 630px;
 }
 .container__designer {
     background: #FBFBFC;
@@ -264,7 +303,6 @@ body{
     font-weight: 700;
     font-size: 34px;
     display: flex;
-    margin: 0;
     margin-bottom: 47px;
 }
 .price__list {
@@ -309,7 +347,6 @@ body{
     font-weight: 700;
     font-size: 34px;
     display: flex;
-    margin: 0;
     color: #FBFBFC;
     margin-bottom: 45px;
 }
@@ -346,7 +383,6 @@ body{
     font-weight: 700;
     font-size: 34px;
     display: flex;
-    margin: 0;
     margin-bottom: 45px;
 }
 .premium__conditions {
