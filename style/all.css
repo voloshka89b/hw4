@@ -69,10 +69,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background: url("../template_img/business.png") 100% 100% no-repeat, url("../template_img/rectangle107.png") 83% 100% no-repeat, url(../img/Ellipse21.png) 100% 60%  no-repeat;
-    background-size: 831px 751px, auto, auto;
-    top: 20px;
-    right: 20px;
+    background: url(../img/Ellipse21.png) 100% 60%  no-repeat;
 }
 .offer .container{
     display: flex;
@@ -147,6 +144,10 @@ body{
 .offer__programs{
    position: relative;
     flex-grow: 1;
+    background: url("../template_img/business.png") 165px 259px no-repeat, url("../template_img/rectangle107.png") 290px 476px no-repeat;
+    background-size: 831px 751px, auto;
+    top: 0;
+    right: 0;
 }
 
 .offer__list {
