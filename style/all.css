@@ -11,7 +11,7 @@ body{
     box-sizing: border-box;
 }
 .container{
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .header{
@@ -22,7 +22,8 @@ body{
 .header__box{
     display: flex;
     align-items: center;
-    gap: 68px;
+    column-gap: 68px;
+    row-gap: 10px;
 }
 .nav__list{
     display: flex;
@@ -73,11 +74,13 @@ body{
 }
 .offer .container{
     display: flex;
+    background: url(../img/Ellipse20.png) left -100px center no-repeat, url("../template_img/business.png") bottom 0 right -200px no-repeat, url("../template_img/rectangle107.png") bottom 0 right 36px no-repeat;
+    background-size: auto, 831px auto, 467px auto;
 }
 .offer__holder{
-    width: 648px;
+    width: 44%;
     margin: 167px 0 195px;
-    background: url(../img/Ellipse20.png) 100% 100% no-repeat;
+
 }
 .offer__text{
     font-weight: 700;
@@ -142,12 +145,8 @@ body{
     position: absolute;
 }
 .offer__programs{
-   position: relative;
+    position: relative;
     flex-grow: 1;
-    background: url("../template_img/business.png") 165px 259px no-repeat, url("../template_img/rectangle107.png") 290px 476px no-repeat;
-    background-size: 831px 751px, auto;
-    top: 0;
-    right: 0;
 }
 
 .offer__list {
@@ -191,9 +190,7 @@ body{
     justify-content: space-between;
     gap: 20px;
 }
-.title_block {
-    width: 588px;
-}
+
 .designer__description {
     font-weight: 400;
     font-size: 18px;
@@ -291,7 +288,7 @@ body{
     font-weight: 700;
     padding-top: 171px;
     padding-bottom: 100px;
-    width: 594px;
+    max-width: 594px;
 }
 .prices__kinds {
     background: #DEEFE4;
@@ -412,6 +409,7 @@ body{
 }
 .footer{
     background: #19191C;
+    padding: 68px 0;
 }
 .logo__footer{
     font-weight: 800;
@@ -489,7 +487,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 68px 0;
 }
 .copyright {
     text-align: center;
@@ -514,4 +511,84 @@ body{
     padding: 12px 28px;
     font-size: 18px;
     text-decoration: none !important;
+}
+@media screen and (max-width: 1440px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .header {
+        display: block;
+        margin-top: 25px;
+    }
+    .header__box {
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+    .offer__holder {
+        width: 100%;
+    }
+
+    .offer__programs {
+        display: none;
+    }
+    .designer__text{
+        padding: 71px 0;
+    }
+
+    .designer__vacancies,
+    .block__kind,
+    .designer__text {
+        display: block;
+    }
+
+    .designer__card,
+    .prices__kinds{
+        margin: 0 auto 20px;
+        max-width: 350px;
+        width: auto;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .discover__prices {
+        margin: auto;
+        font-size: 40px;
+        max-width: 540px;
+        padding: 70px 0;
+    }
+    .block__kind{
+        padding-bottom: 20px;
+    }
+
+    .footer .container {
+        display: block;
+    }
+
+    .footer__contacts {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .footer__nav {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__nav {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .sitemap {
+        width: 50%;
+    }
+
+    .copyright {
+        display: block;
+        text-align: center  ;
+    }
 }
