@@ -9,19 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0400;700;800&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="style/all.css">
-    <title>Title</title>
+    <title>Home learning platform UpDate</title>
 </head>
 <body>
 <header class="container header">
     <div class="header__box">
         <a class="logo" href="index.html">
-            <img src="img/logo.svg" alt="logo">
+            <img src="img/logo.svg" alt="" aria-hidden="true">
             UpDate
         </a>
-        <nav class="nav">
-            <ul class="nav__list">
+        <nav class="nav" aria-label="Main menu">
+            <ul class="nav__list" role="list">
                 <li>
-                    <a class="link" href="#">Courses</a>
+                    <a class="link" href="#" aria-current="page">Courses</a>
                 </li>
                 <li>
                     <a class="link" href="#">Teachers</a>
@@ -33,17 +33,16 @@
         </nav>
     </div>
     <div class="btn-box">
-        <a class="header__link" href="#">
+        <a class="header__link" aria-label="Change language" href="#">
             En
         </a>
         <a class="header__link" href="#">
             Sign In
         </a>
-        <a class="header__btn" href="#">
+        <a class="header__btn" role="button" href="#">
             Trial free
         </a>
     </div>
-
 </header>
 <main>
     <section class="offer">
@@ -51,9 +50,9 @@
             <div class="offer__holder">
                 <div class="title_block">
                     <p class="offer__text">
-                        6 months
+                        <time datetime="P6V">6 months</time>
                     </p>
-                    <hr class="line_bold">
+                    <hr class="line_bold" aria-hidden="true">
                 </div>
                 <p class="offer__text2">
                     profession:
@@ -69,14 +68,16 @@
                     studio
                     or freelance.
                 </p>
-                <button class="button">
+                <button type="button" class="button" aria-label="Start the UI/UX design course">
                     Started
                 </button>
                 <p class="offer__sale">
                     25%
                 </p>
                 <p class="offer__time">
-                    <time>
+                    Ofer ands in%
+                    <time datetime="P17DT17H44M16S"
+                          aria-label="Time remaining: 17 days, 17 hours, 44 minutes, 16 seconds">
                         17 Days 17:44:16
                     </time>
                 </p>
@@ -105,33 +106,35 @@
             </div>
         </div>
     </section>
-    <section class="container__designer">
+    <section class="container__designer" aria-describedby="designer-heading">
         <div class="container">
             <div class="designer__text">
                 <div class="title_block">
-                    <h2 class="designer__title prof">
-                        Profession
+                    <h2 id="designer__heading" class="designer__title prof">
+                        <span class="visually-hidden">Profession</span>
                         UI/UX designer
                     </h2>
                     <p class="designer__description">
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis occaecati cupiditate non
-                        provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis occaecati cupiditate
+                        non
+                        provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+                        dolorum
                         fuga.
                     </p>
                 </div>
-                <div class="salary">
+                <div class="salary" role="group" aria-label="Salary information">
                     <p class="salary__number">
                         5000 $
                     </p>
                     <p class="salary__description">
                         Salary
                     </p>
-                    <hr class="underline">
+                    <hr class="underline" aria-hidden="true">
                     <p class="salary__text">
                         Nam libero tempore, cum soluta nobis est
                     </p>
                 </div>
-                <div class="vacancies">
+                <div class="vacancies" role="group" aria-label="Vacancies information">
                     <p class="vacancies__number">
                         4 225
                     </p>
@@ -146,83 +149,85 @@
             </div>
             <div class="designer__salary">
                 <div class="designer__vacancies">
-                    <div class="designer__card portfolio">
+                    <article class="designer__card portfolio">
                         <h3 class="designer__title">
                             Portfolio
                         </h3>
-                        <hr class="underline2">
+                        <hr class="underline2" aria-hidden="true">
                         <p class="designer__description">
                             You will learn how to create a brand identity on the web and for printing. Learn how to work
                             in
                             Illustrator, Photoshop, InDesign and Figma
                         </p>
-                    </div>
-                    <div class="designer__card internship">
+                    </article>
+                    <article class="designer__card internship">
                         <h3 class="designer__title">
                             Internship
                         </h3>
-                        <hr class="underline2">
+                        <hr class="underline2" aria-hidden="true">
                         <p class="designer__description">
                             You will learn how to create a brand identity on the web and for printing. Learn how to work
                             in
                             Illustrator, Photoshop, InDesign and Figma
-
                         </p>
-                    </div>
-                    <div class="designer__card certificate">
+                    </article>
+                    <article class="designer__card certificate">
                         <h3 class="designer__title">
                             Certificate
                         </h3>
-                        <hr class="underline2">
+                        <hr class="underline2" aria-hidden="true">
                         <p class="designer__description">
                             You will learn how to create a brand identity on the web and for printing. Learn how to work
                             in
                             Illustrator, Photoshop, InDesign and Figma
-
                         </p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
-    <section class="price">
+    <section class="price" aria-labelledby="price-title">
         <div class="container">
             <div class="discover__prices">
-                <h2 class="price__title">
+                <h2 id="prise-title" class="price__title" >
                     Discover Our
                     Prices
                 </h2>
             </div>
             <div class="block__kind">
-                    <div class="prices__kinds base">
-                        <h3 class="base__kind">
-                            Base
-                        </h3>
-                        <ul class="price__list">
-                            <li class="base__conditions">
-                                Et dolorum fuga et harum quidem rerum
-                            </li>
-                            <li class="base__conditions">
-                                Mentors and community support
-                            </li>
-                            <li class="base__conditions">
-                                Necessitatibus saepe
-                            </li>
-                            <li class="base__conditions">
-                                Ut aut reiciendis
-                            </li>
-                        </ul>
-                        <p class="base__price1">
-                            12 000$
-                        </p>
-                        <p class="base__price2">
-                            3 000$
-                        </p>
-                        <button class="button1">
-                            Choose
-                        </button>
+                <article class="prices__kinds base">
+                    <h3 class="base__kind">
+                        Base
+                    </h3>
+                    <ul class="price__list">
+                        <li class="base__conditions">
+                            Et dolorum fuga et harum quidem rerum
+                        </li>
+                        <li class="base__conditions">
+                            Mentors and community support
+                        </li>
+                        <li class="base__conditions">
+                            Necessitatibus saepe
+                        </li>
+                        <li class="base__conditions">
+                            Ut aut reiciendis
+                        </li>
+                    </ul>
+                    <div class="price__wrapper">
+                    <p class="base__price1">
+                        <span class="visually-hidden">Full price:</span>
+                        12 000$
+                    </p>
+                    <p class="base__price2">
+                        <span class="visually-hidden">Discounted price: </span>
+                        3 000$
+                    </p>
                     </div>
-                <div class="prices__kinds optimal">
+                    <button class="button1" aria-label="Choose Base plan">
+                        Choose
+                    </button>
+                </article>
+                <article class="prices__kinds optimal">
                     <h3 class="optimal__kind">
                         Optimal
                     </h3>
@@ -244,16 +249,17 @@
                         </li>
                     </ul>
                     <p class="optimal__price1">
+                        <span class="visually-hidden">Full price: </span>
                         24 000$
                     </p>
                     <p class="optimal__price2">
                         6 000$
                     </p>
-                    <button class="button_opt">
+                    <button class="button_opt" aria-label="Choose Optimal plan">
                         Choose
                     </button>
-                </div>
-                <div class="prices__kinds premium">
+                </article>
+                <article class="prices__kinds premium">
                     <h3 class="premium__kind">
                         Premium
                     </h3>
@@ -274,16 +280,16 @@
                             Sunt in culpa qui officia
                         </li>
                     </ul>
-                    <p class="premium__price1">
+                    <p class="premium__price1"><span class="visually-hidden">Original price: </span>
                         64 000$
                     </p>
-                    <p class="premium__price2">
+                    <p class="premium__price2"><span class="visually-hidden">Discounted price: </span>
                         18 000$
                     </p>
-                    <button class="button_premium">
+                    <button class="button_premium"> aria-label="Choose Premium plan">
                         Choose
                     </button>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -291,7 +297,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__contacts">
-            <a class="logo__footer">
+            <a class="logo__footer" href="/" aria-label="UpDate - Home page">
                 <svg width="42" height="36" viewBox="0 0 42 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="10.8547" height="10.8547"
                           transform="matrix(0.703508 -0.710687 0.703508 0.710687 3.18164 18)" fill="#FBFBFC"/>
@@ -305,10 +311,11 @@
                 </svg>
                 UpDate
             </a>
-            <a class="email" href="mailto:support@update.com">support@update.com </a>
-            <a class="tel" href="tel:+12136771024">+1 (213) 677 10 24</a>
+            <a class="email" href="mailto:support@update.com">
+                <span class="visually-hidden">Email us at: </span> support@update.com </a>
+            <a class="tel" href="tel:+12136771024"> <span class="visually-hidden">Call us at: </span>+1 (213) 677 10 24</a>
         </div>
-        <div class="footer__nav">
+        <nav class="footer__nav" aria-label="Footer Navigation">
             <div class="sitemap">
                 <h6 class="sitemap__title">
                     Courses
@@ -407,14 +414,14 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
     </div>
     <div class="copyright">
-        <a class="copyright" href="#" >
+        <a class="copyright" href="#" aria-label="Read our Privacy Policy">
             Policy privacy
         </a>
         <p class="copyright">
-            Copyright 2022. All rights reserved
+           <small>Copyright 2022. All rights reserved</small>
         </p>
     </div>
 </footer>

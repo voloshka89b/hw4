@@ -180,6 +180,9 @@ body{
 .container__designer {
     background: #FBFBFC;
 }
+.stats__list{
+    list-style: none;
+}
 .designer__text {
     padding: 168px 0;
     display: flex;
@@ -293,7 +296,6 @@ body{
 .prices__kinds {
     background: #DEEFE4;
     width: 33.3333%;
-    height: 732px;
     padding: 68px 48px;
     box-sizing: border-box;
 }
@@ -578,6 +580,56 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+    .offer__holder {
+        margin: 45px 0;
+    }
+    .offer__title{
+        font-size: 58px;
+    }
+    .button {
+        margin-bottom: 62px;
+    }
+    .designer__text {
+        font-size: 58px;
+    }
+    .designer__description {
+        margin-bottom: 50px;
+    }
+    .salary__number {
+        font-size: 48px;
+    }
+    .salary__text {
+        font-size: 14px;
+        margin-bottom: 38px;
+    }
+    .vacancies__text {
+        font-size: 14px;
+    }
+    .offer__description {
+        font-size: 18px;
+    }
+    .vacancies__number {
+        font-size: 48px;
+    }
+    .offer__sale{
+        font-size: 48px;
+    }
+    .prices__kinds {
+        padding: 40px 30px;
+    }
+    .premium__conditions, .optimal__conditions, .base__conditions {
+        padding: 10px;
+    }
+    .premium__kind, .optimal__kind, .base__kind {
+        margin-bottom: 25px;
+    }
+    .nav {
+        width: 100%;
+    }
+    .btn-box, .nav__list {
+        gap: 0;
+        justify-content: space-between;
+    }
     .footer__nav {
         padding: 0;
         flex-wrap: wrap;
