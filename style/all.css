@@ -80,7 +80,9 @@ body{
 .offer__holder{
     width: 44%;
     margin: 167px 0 195px;
-
+}
+.designer__text .title_block{
+    max-width: 588px;
 }
 .offer__text{
     font-weight: 700;
@@ -267,16 +269,12 @@ body{
     font-weight: 700;
     font-size: 34px;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 28px;
 }
 .prof{
     font-weight: 700;
     font-size: 58px;
-    display: flex;
-}
-.designer__description {
-    font-weight: 400;
-    font-size: 18px;
     display: flex;
 }
 .certificate {
@@ -513,6 +511,41 @@ body{
     padding: 12px 28px;
     font-size: 18px;
     text-decoration: none !important;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.button1:hover,
+.button_opt:hover,
+.button_premium:hover,
+.logo__footer:hover,
+.sitemap__item a:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button1:focus,
+.button_opt:focus,
+.button_premium:focus,
+.logo__footer:focus,
+.email:focus,
+.tel:focus,
+.sitemap__item a:focus {
+    outline: 3px solid #007bff;
+    outline-offset: 3px;
+}
+.button1:active,
+.button_opt:active,
+.button_premium:active {
+    transform: scale(0.96);
 }
 @media screen and (max-width: 1440px) {
     .container {
